@@ -9,8 +9,6 @@ Testattu seuraavissa palveluissa:
 - Katsomo
 - Yle Areena
 
-![Videolinkin kopioiminen iltalehden sivuilta.](https://github.com/Osteri/videolinkit-talteen/blob/master/wiki/example.mp4?raw=true)
+![Videolinkin kopioiminen iltalehden sivuilta.](https://github.com/Osteri/videolinkit-talteen/blob/master/wiki/example.gif?raw=true)
 
 Videolinkin kopioiminen iltalehden sivuilta.
-
-
