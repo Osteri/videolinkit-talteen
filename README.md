@@ -1,4 +1,4 @@
-##Kuvaus
+### Kuvaus
 
 Selainlisäosa videolinkkien keräämiseen suomalaisilta nettisivuilta. Lisäosa ei itsessään lataa videoita, vaan sillä saa kerättyä latauslinkit suomalaisilta sivuilta. Jos haluat ladata videot, tarvitset lisäosan lisäksi youtube-dl:n tai muun vastaavan lataajan (kuten nettisivun), johon syötät lisäosasta saatavat linkit. 
 
@@ -19,7 +19,7 @@ Toimii myös muualla, nämä on testattu.
 
 Videolinkin kopioiminen iltalehden sivuilta.
 
-##Asennus Firefoxissa
+### Asennus Firefoxissa
 
 Mene:
 `about:addons`
