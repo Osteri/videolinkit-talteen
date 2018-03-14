@@ -1,4 +1,4 @@
-###Kuvaus
+##Kuvaus
 
 Selainlisäosa videolinkkien keräämiseen suomalaisilta nettisivuilta. Lisäosa ei itsessään lataa videoita, vaan sillä saa kerättyä latauslinkit suomalaisilta sivuilta. Jos haluat ladata videot, tarvitset lisäosan lisäksi youtube-dl:n tai muun vastaavan lataajan (kuten nettisivun), johon syötät lisäosasta saatavat linkit. 
 
@@ -13,17 +13,17 @@ Testattu seuraavissa palveluissa:
 - Katsomo
 - Yle Areena
 
+Toimii myös muualla, nämä on testattu.
+
 ![Videolinkin kopioiminen iltalehden sivuilta.](https://github.com/Osteri/videolinkit-talteen/blob/master/wiki/example.gif?raw=true)
 
 Videolinkin kopioiminen iltalehden sivuilta.
 
-###Asennus
-
-Asennus Firefoxissa:
+##Asennus Firefoxissa
 
 Mene:
 `about:addons`
-Drag'n'droppaa tiedosto installer kansiosta selaimeesi:
+Drag'n'droppaa asennustiedosto installer-kansiosta selaimeesi:
 `video-linkit-talteen-1.0.xpi`
 
 
