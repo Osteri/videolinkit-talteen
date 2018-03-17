@@ -27,6 +27,10 @@ Mene:
 
 Drag'n'droppaa asennustiedosto installer-kansiosta selaimeesi:
 
-  `video-linkit-talteen-1.0.xpi`
+  `video-linkit-talteen-x.y.xpi`
+
+### Kehitys
+
+Lisäosa ei käytä kirjastoja tai frameworkkeja, pelkästään JavaScript + HTML + CSS, joten teoriassa sen pitäisi olla kohtuu nopea. Yksi kriteeri lisäosalle kehitykselle oli olla käyttämättä ulkoisia kirjastoja.
 
 
