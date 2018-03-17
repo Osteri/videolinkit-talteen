@@ -1,18 +1,33 @@
 var bg = browser.extension.getBackgroundPage();
 browser.browserAction.setBadgeText({text: ''});
 
-// Parallel arrays for making things simple
-var shortLinks = document.getElementsByClassName("divTableCellLink");
-var copyDivs = document.getElementsByClassName("divTableCellCopy");
-var originalLinks = [];
+// Shorten text to a fixed length
+function shortenText(str, len) {
+  if (str.length > len) return str.substring(0, len) + "...";
+  return str;
+}
 
 // Unix style basename for JS
-function baseName(str, sep) {
+function basename(str, sep) {
   return str.substr(str.lastIndexOf(sep) + 1);
 }
 
+function shortenedBasename(str, len) {
+  return shortenText(basename(str, '/'), len);
+}
+
+// Action of copy button being pressed
+function copyBtn() {
+  console.log("Copy button pressed!")
+}
+
+// Action of download button being pressed
+function downloadBtn() {
+  console.log("Download button pressed!")
+}
+
 // Copy JS variable on the clipboard
-function copyToClipboard(text){
+function copyToClipboard(text) {
   var dummy = document.createElement("input");
   document.body.appendChild(dummy);
   dummy.setAttribute('value', text);
@@ -23,26 +38,15 @@ function copyToClipboard(text){
 
 console.log("Found " + bg.streams.length + " streams."); 
 
-// Gather DOM elements in parallel arrays
-var link = bg.streams.shift(); // dequeue next link
-for (var i = 0; link; link = bg.streams.shift(), i++) {
-  originalLinks.push(link);
-  var field = baseName(link, '/');
-  shortLinks[i].innerHTML = field; 
+var link = bg.streams.shift();
+while (link) {
+  console.log(link);
+  var content = document.querySelector('template').content;
+  var span = content.querySelector('span');
+  //  span.textContent = basename(link, '/');
+  span.textContent = shortenedBasename(link, 20);
+  document.querySelector('#container').appendChild(
+    document.importNode(content, true));
+  // next row
+  link = bg.streams.shift();
 }
-for (var i = 0; i < copyDivs.length; i++) {
-  var field = '📋';
-  copyDivs[i].innerHTML = field; 
-}
-
-// Modifies link_page.html elements
-document.addEventListener("click", function(e) {
-  if (e.target.classList.contains("divTableCellCopy")) {
-    var link_id = e.target.id - 1; // get earlier cell (not the one clicked)
-    console.log("Copying " + shortLinks[link_id].innerHTML + " to clipboard.");
-    console.log("Copied " + originalLinks[link_id] + ".");
-    copyToClipboard(originalLinks[link_id]); 
-    return;
-  } 
-});
-

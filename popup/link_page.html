@@ -5,41 +5,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="link_page.css"/>
   </head>
-
-<body>
-  <div class="divTable">
-  <div class="divTableBody">
-    
-    <div class="divTableRow">
-      <div class="divTableCell">Link</div>
-      <div class="divTableCell">Copy</div>
-    </div> <!-- TableRow -->
-
-    <div class="divTableRow">
-      <div class="divTableCellLink">...</div>
-      <div id="1" class="divTableCellCopy">...</div>
-    </div> <!-- TableRow -->
-    
-    <div class="divTableRow">
-      <div class="divTableCellLink">...</div>
-      <div id="2" class="divTableCellCopy">...</div>
-    </div> <!-- TableRow -->
-    
-    <div class="divTableRow">
-      <div class="divTableCellLink">...</div>
-      <div id="3" class="divTableCellCopy">...</div>
-    </div> <!-- TableRow -->
-    
-    <div class="divTableRow">
-      <div class="divTableCellLink">...</div>
-      <div id="4" class="divTableCellCopy">...</div>
-    </div> <!-- TableRow -->
-    
+  <body>
+    <div id="container"></div>
+    <template>
+      <div id="row">    <!-- row --> 
+        <span class="ln" >Link</span>
+        <span><button class="cp" onclick="cpBtn()">📋</button></span>
+        <span><button class="dl" onclick="dlBtn()">💾</button></span>
+      </div>            <!-- end of row -->
+    </template>
     <script src="link_page.js"></script>
-
-  </div> <!-- TableBody -->
-  </div> <!-- Table -->
-  <!-- DivTable.com -->
-</body>
-
+  </body>
 </html>

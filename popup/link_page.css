@@ -1,51 +1,23 @@
-/* DivTable.com */
-.divTable{
-	display: table;
-	width: 100%;
+span.ln {
+
 }
-.divTableRow {
-	display: table-row;
+
+button {
+  float: right;
+  background-color: white;
+  border: white;
 }
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
+
+button:hover {
+  background-color: #d3d3d3;
 }
-.divTableCell, .divTableHead {
-	border: 1px solid #999999;
-	display: table-cell;
-	padding: 3px 10px;
+
+button.cp {
+
 }
-.divTableCellLink {
-	border: 1px solid #999999;
-	display: table-cell;
-	padding: 3px 10px;
+
+button.dl{
+  cursor: not-allowed;
+  opacity: 0.5;
 }
-.divTableCellCopy {
-	border: 1px solid #999999;
-	display: table-cell;
-	padding: 3px 10px;
-}
-.divTableCellCopy:active {
-	border: 1px solid #999999;
-	display: table-cell;
-	padding: 3px 10px;
-	background: #999999;
-}
-.divTableCellDownload {
-	border: 1px solid #999999;
-	display: table-cell;
-	padding: 3px 10px;
-}
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-	font-weight: bold;
-}
-.divTableFoot {
-	background-color: #EEE;
-	display: table-footer-group;
-	font-weight: bold;
-}
-.divTableBody {
-	display: table-row-group;
-}
+
