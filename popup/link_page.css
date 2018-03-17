@@ -1,4 +1,8 @@
-span.ln {
+span.ln-full {
+  display: none;
+}
+
+span.ln-short {
 
 }
 
