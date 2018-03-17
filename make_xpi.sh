@@ -3,7 +3,7 @@
 # Make Firefox installer.
 #
 # Usage: 
-# ./make_installer.sh
+# ./make_xpi.sh
 
 ARGS=1
 E_BADARGS=85   # Wrong number of arguments passed to script.
