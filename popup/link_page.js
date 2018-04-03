@@ -56,7 +56,7 @@ while (link) {
 var buttons = document.getElementsByClassName('cp');
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].onclick = function() {
-    var p = this.parentElement.previousElementSibling.previousElementSibling.innerHTML;
+    var p = this.parentElement.previousElementSibling.previousElementSibling.textContent;
     console.log("Copied %c" + p, "color: blue", "to clipboard.");
     copyToClipboard(p);
   };
