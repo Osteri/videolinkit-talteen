@@ -36,6 +36,7 @@ Drag'n'droppaa asennustiedosto installer-kansiosta selaimeesi:
    tai
 
    `make`
+
    `make install`
 
 ### Kehitys
