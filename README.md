@@ -29,6 +29,15 @@ Drag'n'droppaa asennustiedosto installer-kansiosta selaimeesi:
 
   `video-linkit-talteen-x.y.xpi`
 
+### Asennus Makefile
+
+   `make all`
+
+   tai
+
+   `make`
+   `make install`
+
 ### Kehitys
 
 Lisäosa ei käytä kirjastoja tai frameworkkeja, pelkästään JavaScript + HTML + CSS, joten teoriassa sen pitäisi olla kohtuu nopea. Yksi kriteeri lisäosalle kehitykselle oli olla käyttämättä ulkoisia kirjastoja.
