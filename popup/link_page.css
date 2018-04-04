@@ -3,7 +3,7 @@ span.ln-full {
 }
 
 span.ln-short {
-
+  padding-left: 2px;
 }
 
 button {
@@ -17,7 +17,6 @@ button:hover {
 }
 
 button.cp {
-
 }
 
 button.dl{
